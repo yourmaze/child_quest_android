@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">Квестуш - квесты в реальности для детей</string>
+    <string name="menu_title_game">Квесты</string>
+    <string name="menu_title_shop">Магазин</string>
+    <string name="menu_title_blog">Блог</string>
+    <string name="step_title_quest">Шаг</string>
+    <string name="step_title_of">из</string>
+    <string name="step_send">Отправить</string>
+    <string name="step_open">Открыть иллюстрацию к заданию</string>
+    <string name="step_card_title_say">Прочитайте вслух</string>
+    <string name="step_card_title_action">Сделайте</string>
+    <string name="step_card_title_decision">Решение задачи</string>
+    <string name="shop_item_buy_for">Купить за</string>
+    <string name="shop_buy_once">Навсегда</string>
+    <string name="shop_buy_months">на 1 месяц</string>
+    <string name="game_start_quest">Начать квест</string>
+    <string name="title_activity_end_game_page">EndGamePageActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+    <string name="title_activity_intro">IntroActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_single_download">SingleDownloadActivity</string>
+
+    <string name="permission_not_enabled">Пожалуйста, разрешите запись файлов для этого приложения.</string>
+    <string name="complete_over">%1$d/%2$d</string>
+    <string name="percent_progress">%1$d%%</string>
+    <string name="downloading">загрузка…</string>
+    <string name="queued">запрос</string>
+    <string name="retry">Повторить</string>
+    <string name="added">добавлено</string>
+    <string name="status_unknown">Ошибка подключения</string>
+
+</resources>

@@ -1,0 +1,83 @@
+plugins {
+    id 'com.android.application'
+}
+
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
+
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'com.google.firebase.crashlytics'
+apply plugin: 'com.google.firebase.firebase-perf'
+
+
+
+android {
+    signingConfigs {
+        release {
+            keyAlias 'kvestushchildquest'
+            storePassword 'rdtcneipass321'
+            keyPassword 'rdtcneipass321'
+            storeFile file('C:\\Users\\user\\kvestushchildquest.jks')
+        }
+        debug {
+            storeFile file('C:\\Users\\user\\kvestushchildquest.jks')
+            storePassword 'rdtcneipass321'
+            keyPassword 'rdtcneipass321'
+            keyAlias 'kvestushchildquest'
+        }
+    }
+
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.minus30.childquest"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 8
+        versionName "6.2"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
+    }
+
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation 'com.github.cdflynn:checkview:v1.1'
+
+    implementation "androidx.tonyodev.fetch2:xfetch2:3.1.6"
+    //implementation "androidx.tonyodev.fetch2rx:xfetch2rx:3.1.6"
+    //implementation "androidx.tonyodev.fetch2okhttp:xfetch2okhttp:3.1.6"
+
+    implementation 'com.github.AppIntro:AppIntro:6.1.0'
+    implementation 'com.android.billingclient:billing-ktx:3.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.navigation:navigation-fragment:2.2.2'
+    implementation 'androidx.navigation:navigation-ui:2.2.2'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    implementation platform('com.google.firebase:firebase-bom:28.4.2')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation 'com.google.firebase:firebase-crashlytics'
+    implementation 'com.google.firebase:firebase-perf'
+
+}

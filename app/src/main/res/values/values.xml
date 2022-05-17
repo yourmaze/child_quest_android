@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="H1" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#333649</item>
+        <item name="android:fontFamily">@font/rubik_bold</item>
+        <item name="android:textSize">26sp</item>
+    </style>
+    <style name="H2" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#333649</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+    <style name="H3" parent="H2">
+        <item name="android:textSize">15sp</item>
+    </style>
+    <style name="H4" parent="H2">
+        <item name="android:textSize">13sp</item>
+    </style>
+    <style name="textCaption" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#7E82A8</item>
+        <item name="android:fontFamily">@font/rubik_regular</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+    <style name="p" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#393939</item>
+        <item name="android:fontFamily">@font/rubik_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="likeLink" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/main</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="btnText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="secondaryBtnText" parent="btnText">
+        <item name="android:background">@drawable/secondary_button_background</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Label" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:fontFamily">@font/rubik_medium</item>
+        <item name="android:textSize">11sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+    </style>
+    <style name="Label.Green" parent="Label">
+        <item name="android:background">@drawable/ic_age_back</item>
+    </style>
+    <style name="Label.Yellow" parent="Label">
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/ic_price_back</item>
+    </style>
+    <style name="Label.Orange" parent="Label">
+        <item name="android:background">@drawable/label_orange</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+    </style>
+
+</resources>

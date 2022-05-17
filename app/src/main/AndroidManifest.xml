@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.minus30.childquest">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
+        android:theme="@style/Theme.GameApp">
+        <activity android:name=".SingleDownloadActivity">
+        <!--<intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>-->
+    </activity>
+    <activity
+        android:name=".IntroActivity"
+        android:label="@string/title_activity_intro"
+        android:theme="@style/Theme.GameApp.NoActionBar"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".EndGamePageActivity" />
+    <activity
+        android:name=".GameStepsActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".StoryInfoActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".StoryPageActivity"
+        android:screenOrientation="portrait"/>
+    <activity android:name=".StoriesCategoryActivity" />
+    <activity android:name=".ShopActivity" />
+    <activity android:name=".ShopItemPageActivity" />
+    <activity android:name=".BlogPostPageActivity" />
+    <activity android:name=".MenuActivity" />
+    <activity android:name=".BlogPageActivity" />
+    <activity android:name=".MainActivity">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity> <!-- File Provider -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+    </application>
+
+</manifest>

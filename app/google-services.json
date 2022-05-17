@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "506394420247",
+    "project_id": "questush-94841",
+    "storage_bucket": "questush-94841.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:506394420247:android:92f2066dd979e1b85aa852",
+        "android_client_info": {
+          "package_name": "com.minus30.childquest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "506394420247-fj8ec12lp0ajt84foc5pg2aonodaebqe.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAixIYd2jo7egaCC5MWJwoJ6klOnc3VsWo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "506394420247-fj8ec12lp0ajt84foc5pg2aonodaebqe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
